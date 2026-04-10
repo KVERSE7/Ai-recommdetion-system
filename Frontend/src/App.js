@@ -55,7 +55,7 @@ export default function App() {
     setHasSearched(true);
 
     try {
-      const response = await fetch('https://ai-recommdetion-system.vercel.app/recommendations', {
+      const response = await fetch('https://ai-recommdetion-system.vercel.app/api/recommendations', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query })
